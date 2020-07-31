@@ -1,0 +1,580 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Very-Dark-Blue: hsl(243, 87%, 12%);
+    --Desaturated-Blue: hsl(238, 22%, 44%);
+    --Bright-Blue: hsl(224, 93%, 58%);
+    --Moderate-Cyan: hsl(170, 45%, 43%);
+    --Light-Grayish-Blue: hsl(240, 75%, 98%);
+    --Light-Gray: hsl(0, 0%, 75%);
+    --body: 'Open Sans';
+    --Anyother: 'Raleway';
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+h2,
+button {
+    font-family: 'Raleway', 'Times';
+}
+
+
+/* Navigation bar styling */
+
+nav {
+    display: flex;
+    padding: 1%;
+    min-height: 5vh;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    background-color: #ffffff;
+    margin-top: 2rem;
+    font-family: 'Raleway';
+}
+
+.logo {
+    min-width: 40%;
+    padding-left: 3%;
+}
+
+.logo img {
+    width: 45%
+}
+
+.nav-links {
+    width: 58%;
+}
+
+.nav-links ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-links ul li {
+    list-style: none;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: var(--Very-Dark-Blue);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+
+/* Hero Section styling */
+
+main .hero {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+main .hero .flex-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6%;
+}
+
+main .hero .flex-container .left {
+    min-width: 100%;
+    order: 2;
+    text-align: center;
+}
+
+main .hero .flex-container .right {
+    min-width: 100%;
+    order: 1;
+    text-align: center;
+    margin-top: 20%;
+}
+
+main .hero .flex-container .right img {
+    width: 37rem;
+}
+
+main .hero .flex-container .left h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 5rem;
+}
+
+main .hero .flex-container .left h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    width: 90%;
+    margin: 3% auto auto;
+}
+
+main .hero .flex-container .left input {
+    width: 80%;
+    display: block;
+    margin: auto;
+    height: 4.3rem;
+    margin-top: 5%;
+    border-radius: 0.8rem;
+    outline: none;
+    border-color: var(--Desaturated-Blue);
+    border-style: none;
+    padding-left: 3%;
+    -webkit-box-shadow: 0px 0px 8px -2px var(--Very-Dark-Blue);
+    -moz-box-shadow: 0px 0px 8px -2px var(--Very-Dark-Blue);
+    box-shadow: 0px 0px 8px -2px var(--Very-Dark-Blue);
+}
+
+main .hero .flex-container .left input::placeholder {
+    color: var(--Light-Gray);
+    padding-left: 10%;
+    font-family: var(--body);
+    font-weight: 700;
+}
+
+main .hero .flex-container .left button {
+    width: 80%;
+    display: block;
+    margin: auto;
+    height: 4rem;
+    margin-top: 1.5%;
+    background-color: var(--Bright-Blue);
+    border-radius: 0.8rem;
+    outline: none;
+    border-style: none;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 6%;
+    -webkit-box-shadow: 0px 0px 8px -2px var(--Bright-Blue);
+    -moz-box-shadow: 0px 0px 8px -2px var(--Bright-Blue);
+    box-shadow: 0px 0px 8px -2px var(--Bright-Blue);
+}
+
+main .hero .curve-cont_ {
+    width: 100%;
+    height: 10rem;
+    background-image: url(assets/bg-curve-mobile.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Info Section Styling*/
+
+main .info {
+    background-color: var(--Light-Grayish-Blue);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main .info .info-left {
+    order: 2;
+    min-width: 100%;
+    text-align: center;
+}
+
+main .info .info-right {
+    min-width: 100%;
+    order: 1;
+    text-align: center;
+    margin-top: 20%;
+}
+
+main .hero .flex-container .right {
+    min-width: 100%;
+    order: 1;
+    text-align: center;
+    margin-top: 20%;
+}
+
+main .info .info-right img {
+    width: 32rem;
+}
+
+main .info .info-left .up {
+    margin-top: 5rem;
+}
+
+main .info .info-left .up h2 {
+    font-family: var(--Anyother);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+main .info .info-left .up h5 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5rem;
+}
+
+main .info .info-left .up button {
+    width: 40%;
+    display: block;
+    margin: auto;
+    height: 4rem;
+    margin-top: 1.5%;
+    background-color: transparent;
+    outline: none;
+    border-style: none none solid none;
+    border-color: var(--Moderate-Cyan);
+    color: var(--Moderate-Cyan);
+    font-weight: 700;
+    margin-bottom: 6%;
+    cursor: pointer;
+}
+
+main .info .info-left .up button img {
+    width: 10%;
+}
+
+main .info .info-left .card {
+    width: 70%;
+    margin: auto;
+    background-color: #ffffff;
+    border-style: none;
+    text-align: left;
+    padding-left: 3%;
+    padding-top: 3%;
+    margin-bottom: 10%;
+    padding-bottom: 3%;
+    border-radius: 0.7rem;
+    -webkit-box-shadow: 0px 0px 8px -2px rgba(0, 0, 0, 0.507);
+    -moz-box-shadow: 0px 0px 8px -2px rgba(0, 0, 0, 0.507);
+    box-shadow: 0px 0px 8px -2px rgba(0, 0, 0, 0.507);
+}
+
+main .info .info-left .card .comma {
+    margin-bottom: 1%;
+}
+
+main .info .info-left .card .comma img {
+    width: 5%;
+}
+
+main .info .info-left .card h4 {
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+main .info .info-left .card .avatar-sec {
+    display: flex;
+    width: 70%;
+    margin-top: 3%;
+}
+
+main .info .info-left .card .avatar-sec img {
+    width: 52%;
+    border-radius: 50%;
+}
+
+main .info .info-left .card .avatar-sec .avatar-info {
+    width: 100%;
+}
+
+main .fylo-form {
+    width: 100%;
+    background-color: var(--Desaturated-Blue);
+    color: #ffffff;
+    padding-top: 3.5rem;
+    text-align: center;
+    padding-bottom: 3.5rem;
+}
+
+main .fylo-form h2 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+main .fylo-form p {
+    width: 70%;
+    margin: auto;
+}
+
+main .fylo-form input {
+    width: 70%;
+    display: block;
+    margin: auto;
+    height: 4rem;
+    margin-top: 3%;
+    border-radius: 0.5rem;
+    outline: none;
+    border-style: none;
+    color: var(--Light-Grayish-Blue);
+    -webkit-box-shadow: 0px 0px 8px -2px rgba(0, 0, 0, 0.507);
+    -moz-box-shadow: 0px 0px 8px -2px rgba(0, 0, 0, 0.507);
+    box-shadow: 0px 0px 8px -2px rgba(0, 0, 0, 0.507);
+}
+
+main .fylo-form input::placeholder {
+    color: var(--Light-Gray);
+    padding-left: 5%;
+    font-family: var(--body);
+    font-weight: 700;
+}
+
+main .fylo-form button {
+    width: 70%;
+    display: block;
+    margin: auto;
+    height: 4rem;
+    margin-top: 1.5%;
+    background-color: var(--Bright-Blue);
+    border-radius: 0.5rem;
+    outline: none;
+    border-style: none;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 6%;
+    -webkit-box-shadow: 0px 0px 8px -2px rgba(0, 0, 0, 0.507);
+    -moz-box-shadow: 0px 0px 8px -2px rgba(0, 0, 0, 0.507);
+    box-shadow: 0px 0px 8px -2px rgba(0, 0, 0, 0.507);
+}
+
+footer {
+    width: 100%;
+    background-color: var(--Very-Dark-Blue);
+    padding-top: 5rem;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3rem;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer .logo {
+    width: 50%;
+}
+
+footer .footer-links ul li {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+}
+
+footer .footer-links .links-1 ul li a img {
+    margin-right: 2%;
+}
+
+.links-1,
+.links-2,
+.links-3 {
+    margin-top: 5rem;
+}
+
+footer .footer-links .socials ul {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+footer .footer-links .socials ul li {
+    padding-left: 5%;
+}
+
+footer .footer-links .socials ul li div {
+    width: 3.5rem;
+    height: 3.5rem;
+    text-align: center;
+    color: #ffffff;
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 2px;
+}
+
+@media screen and (min-width:960px) {
+    nav {
+        margin-top: 1rem;
+    }
+    nav .logo img {
+        width: 10%;
+    }
+    nav .logo {
+        min-width: 60%;
+        padding-left: 1.5%;
+    }
+    .nav-links {
+        width: 38%;
+    }
+    .nav-links ul li a {
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+    main .hero .flex-container {
+        flex-direction: row;
+    }
+    main .hero .flex-container .left {
+        order: 1;
+        min-width: 50%;
+        padding-top: 7%;
+        text-align: left;
+    }
+    main .hero .flex-container .right {
+        order: 2;
+        min-width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: auto;
+        padding: 10%;
+    }
+    main .hero .flex-container .left h2 {
+        font-size: 4rem;
+        font-weight: 700;
+        margin-top: 5rem;
+        width: 90%;
+        margin-left: auto;
+    }
+    main .hero .flex-container .left h4 {
+        font-size: 2rem;
+        font-weight: 400;
+        width: 90%;
+        margin-left: auto;
+        margin-right: 0;
+        line-height: 3.2rem;
+    }
+    main .hero .flex-container .left input {
+        width: 60%;
+        display: inline-block;
+    }
+    main .hero .flex-container .left .form {
+        padding-left: 10%;
+    }
+    main .hero .flex-container .left input::placeholder {
+        padding-left: 5%;
+    }
+    main .hero .flex-container .left button {
+        width: 30%;
+        display: inline-block;
+        height: 4.3rem;
+    }
+    main .hero .flex-container .right img {
+        width: 50rem;
+    }
+    main .hero .flex-container {
+        margin-bottom: 5%;
+    }
+    main .hero .curve-cont_ {
+        background-image: url(assets/bg-curve-desktop.svg);
+        background-size: cover;
+    }
+    main .info {
+        flex-direction: row;
+        padding-top: 4%;
+    }
+    main .info .info-left {
+        order: 1;
+        min-width: 60%;
+        text-align: left;
+    }
+    main .info .info-right {
+        min-width: 40%;
+        order: 2;
+        margin-top: 5%;
+        text-align: left;
+    }
+    main .info .info-right img {
+        width: 40rem;
+    }
+    main .info .info-left .up h2 {
+        font-size: 4rem;
+        width: 90%;
+        margin-left: auto;
+        margin-bottom: 5%;
+    }
+    main .info .info-left .up h5 {
+        font-size: 2rem;
+        width: 79%;
+        margin-left: auto;
+        margin-right: 9.1rem;
+        margin-top: 1.5rem;
+    }
+    main .info .info-left .up button {
+        width: 27%;
+        display: block;
+        margin-left: 7.5rem;
+        margin-right: 0;
+        height: 4rem;
+        margin-top: 1.5%;
+        margin-bottom: 6%;
+        cursor: pointer;
+    }
+    main .info .info-left .card {
+        width: 54%
+    }
+    main .fylo-form {
+        display: flex;
+        padding-top: 7%;
+        padding-bottom: 7%;
+    }
+    main .fylo-form .content {
+        min-width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+    }
+    main .fylo-form .content p {
+        margin: 3% auto;
+        width: 60%;
+        font-size: 1.5rem;
+    }
+    main .fylo-form .content h2 {
+        font-size: 4rem;
+    }
+    main .fylo-form .question-form {
+        min-width: 40%;
+    }
+    main .fylo-form button {
+        width: 35%;
+        margin-left: 8.1rem;
+    }
+    footer .footer-links {
+        display: flex;
+        justify-content: space-around;
+        margin-left: -2rem;
+    }
+    .links-1,
+    .links-2,
+    .links-3 {
+        width: 22.5%;
+    }
+    footer .footer-links .socials {
+        margin-top: 5rem;
+        width: 22.5%;
+    }
+    footer .footer-links .socials ul {
+        justify-content: space-evenly;
+    }
+}
+
+
+/*
+!!!media query dont forget please
+
+ main .info .info-left .up button img {
+    width: 5%;
+}
+ */
